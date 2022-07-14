@@ -30,6 +30,7 @@ import rutenAd from "Assets/ruten_ad.png";
 import rutenAdBoard from "Assets/ruten_ad_board.png";
 import rutenLogistic from "Assets/ruten_logistic.png";
 import rutenSeller from "Assets/ruten_seller.png";
+import avatar from "Assets/chungkanghu-s.jpg";
 
 let locale = zhTw;
 let value1 = ref("");
@@ -50,9 +51,6 @@ const closeImgView = () => {
     <div class="common-layout">
       <el-container>
         <el-main>
-          <h1 class="text-3xl font-bold mb-4">
-            Hello! Hej!
-          </h1>
           <section>
             <el-row class="row-bg" justify="space-between" align="">
               <el-col :span="16">
@@ -61,13 +59,13 @@ const closeImgView = () => {
                     <div class="avatar">
                       <el-avatar
                         :size="100"
-                        src="https://kang-hu.github.io/images/avatar1.jpg"
+                        :src="avatar"
                       />
                     </div>
                   </el-col>
                   <el-col :span="18">
                     <h1 class="text-3xl font-bold">CHUNG-KANG HU</h1>
-                    <h1 class="text-3xl font-bold mb-2">胡 仲 康</h1>
+                    <h1 class="mb-2 text-3xl font-bold">胡 仲 康</h1>
                     <p class="text-lg italic text-gray-500">
                       Front-End-Developer
                     </p>
@@ -98,18 +96,23 @@ const closeImgView = () => {
           <el-divider />
           <section>
             <section>
-              <h3 class="text-xl font-bold mb-2">SUMMARY</h3>
-              <p>
+              <h3 class="mb-2 text-xl font-bold">關於</h3>
+              <!-- <p>
                 My passion is to use code to create beautiful, easy-to-use interfaces. I have over 8+ years of experience working as a front-end developer in a digital advertising agency and the e-commerce industry. I've collaborated with diverse clients and stakeholders to solve problems, continuously seek better ways, and keep improving my skills. In my spare time, I love photography and travel, which inspires me to work on creating beautiful things and discover the world from a different perspective.
+              </p> -->
+              <p>喜歡探索世界的前端工程師，先後於數位行銷及C2C電商產業累積八年以上相關經驗，
+                期間完成專案外也擁有維運升級工具及管理和指導方面的經歷。
+                平常興趣是旅行和攝影，讓我重視觀察思考及體驗。
+                關於對開發的想法舉美好的青花瓷為例，白瓷搭配進口的染料搭配多元文化融合的圖案，以上使我總是期待參與製作好看易用的產品。
               </p>
             </section>
             <el-divider />
             <el-row>
               <el-col id="side" :span="5" :sm="7" :xs="24" class="pr-2">
                 <section class="">
-                  <h3 class="text-xl font-bold mb-2">SKILLS & TOOLS</h3>
-                  <p class="text-sm italic text-gray-500 mb-2">// Front-End</p>
-                  <ul class="text-sm font-bold mb-2 leading-relaxed">
+                  <h3 class="mb-2 text-xl font-bold">技能</h3>
+                  <p class="mb-2 text-sm italic text-gray-500">// Front-End</p>
+                  <ul class="mb-2 text-sm font-bold leading-relaxed">
                     <li>HTML/Canvas</li>
                     <li>CSS/sass/Less</li>
                     <li>Javascript/JQuery</li>
@@ -117,14 +120,14 @@ const closeImgView = () => {
                     <li>Vue3/Vue2/Vuex</li>
                     <li>Vite/Gulp/Webpack</li>
                   </ul>
-                  <p class="text-sm italic text-gray-500 mb-2">// Back-End</p>
-                  <ul class="text-sm font-bold mb-2 leading-relaxed">
+                  <p class="mb-2 text-sm italic text-gray-500">// Back-End</p>
+                  <ul class="mb-2 text-sm font-bold leading-relaxed">
                     <li>Wordpress</li>
                     <li>MVC/Asp.net/PHP</li>
                     <li>Jenkins/Azure</li>
                   </ul>
-                  <p class="text-sm italic text-gray-500 mb-2">// Others</p>
-                  <ul class="text-sm font-bold mb-2 leading-relaxed">
+                  <p class="mb-2 text-sm italic text-gray-500">// Others</p>
+                  <ul class="mb-2 text-sm font-bold leading-relaxed">
                     <li>Ga/Gtag/GTM</li>
                     <li>lighthouse</li>
                     <li>Docker</li>
@@ -133,26 +136,26 @@ const closeImgView = () => {
                 </section>
                 <el-divider />
                 <section>
-                  <h3 class="text-xl font-bold mb-2">LANGUAGE</h3>
+                  <h3 class="mb-2 text-xl font-bold">語言</h3>
                   <p class="text-sm">
-                    Chinese<span class="text-gray-500 ml-2 italic"
+                    Chinese<span class="ml-2 italic text-gray-500"
                       >// Native</span
                     >
                   </p>
                   <p class="text-sm">
-                    English<span class="text-gray-500 ml-2 italic"
+                    English<span class="ml-2 italic text-gray-500"
                       >// Fluent</span
                     >
                   </p>
                 </section>
                 <el-divider />
                 <section>
-                  <h3 class="text-xl font-bold mb-2">EDUCATION</h3>
-                  <p class="">Information Management</p>
-                  <p class="">Yuan Ze University</p>
-                  <p class="text-sm mb-2">
+                  <h3 class="mb-2 text-xl font-bold">教育</h3>
+                  <p class="">元智大學</p>
+                  <p>資訊管理學系</p>
+                  <p class="mb-2 text-sm">
                     <span class="italic text-gray-500"
-                      >(Bachelor Degree<br />09/08 - 06/12)</span
+                      >(學士 09/08 - 06/12)</span
                     >
                   </p>
                   <p class="text-sm">
@@ -164,11 +167,11 @@ const closeImgView = () => {
               <el-col :span="19" :sm="17" :xs="24" class="">
                 <section class="mb-4">
                   <div class="">
-                    <h3 class="text-xl font-bold mb-2">FREELANCED WORKING EXPERIENCE</h3>
-                    <p class="italic text-gray-500 mb-2 pl-6">
+                    <h3 class="mb-2 text-xl font-bold">FREELANCED WORKING EXPERIENCE</h3>
+                    <p class="pl-6 mb-2 italic text-gray-500">
                       2015 - Present
                     </p>
-                    <p class="mb-2 pl-6">Follow customers guideline make a template and wordpress installation...</p>
+                    <p class="pl-6 mb-2">Follow customers guideline make a template and wordpress installation...</p>
                     <div class="pl-6">
                       <ul class="pl-6">
                         <li class="list-disc">
@@ -203,15 +206,15 @@ const closeImgView = () => {
                   </div>
                 </section>
                 <section>
-                  <h3 class="text-xl font-bold mb-2">WORKING EXPERIENCE</h3>
+                  <h3 class="mb-2 text-xl font-bold">WORKING EXPERIENCE</h3>
                   <div class="mb-4">
                     <p class="font-bold">
                       <el-icon color="#000000" :size="14" class="mr-2"
                         ><Coffee /></el-icon
                       >Consultant , SeniorFront-End Developer
                     </p>
-                    <p class="font-bold pl-6">Ruten PChome eBay Co.,Ltd</p>
-                    <p class="italic text-gray-500 mb-2 pl-6">
+                    <p class="pl-6 font-bold">Ruten PChome eBay Co.,Ltd</p>
+                    <p class="pl-6 mb-2 italic text-gray-500">
                       08/2018 - Present
                     </p>
                     <div class="pl-6">
@@ -221,15 +224,15 @@ const closeImgView = () => {
                           <li class="list-disc">Conducted A/B testing and kept track of metrics(impress, event) via Google Analytics, elk.</li>
                         </ul>
                       <div>
-                        <h3 class="font-bold mb-2">Achievements</h3>
+                        <h3 class="mb-2 font-bold">Achievements</h3>
                         <ul class="pl-6 mb-2">
                           <li class="list-disc">User focus pages seo reaching lighthouse 85+</li>
                           <li class="list-disc">Improve compile environment using vite, docker... decrease compile time 80%+</li>
                         </ul>
                       </div>
-                      <h3 class="font-bold mb-2">Key Projects Includes</h3>
+                      <h3 class="mb-2 font-bold">Key Projects Includes</h3>
                       <ul class="pl-6">
-                        <li class="list-disc mb-4">
+                        <li class="mb-4 list-disc">
                           <p>
                             Ruten's pages
                             <span class="italic">(vue2, vue3, php)</span
@@ -247,7 +250,7 @@ const closeImgView = () => {
                             page...).Concerned about realizing the design draft with the componentized concept, integrate the service API with the backend.
                           </p>
                         </li>
-                        <li class="list-disc mb-4">
+                        <li class="mb-4 list-disc">
                           <p>
                             Front-End Infra
                             <span class="italic">(vite, gulp, webpack)</span>
@@ -272,7 +275,7 @@ const closeImgView = () => {
                               ></a>
                             </li>
                           </ul>
-                          <p class="italic text-gray-500 mt-1">
+                          <p class="mt-1 italic text-gray-500">
                             // Have a tool-building mindset, continuously
                             improve the develope environment. For example
                             dockerize bundle tool in CI/CD and created
@@ -304,7 +307,7 @@ const closeImgView = () => {
                               ></a>
                             </li>
                           </ul>
-                          <p class="italic text-gray-500 mt-1">
+                          <p class="mt-1 italic text-gray-500">
                             // Responsible for website development and then publishing via CMS.
                           </p>
                         </li>
@@ -317,16 +320,16 @@ const closeImgView = () => {
                         ><Coffee /></el-icon
                       >Senior, Junior Front-End Developer
                     </p>
-                    <p class="font-bold pl-6">
+                    <p class="pl-6 font-bold">
                       SPRING TREES TECHNOLOGY CO., LTD.
                     </p>
-                    <p class="italic text-gray-500 mb-2 pl-6">
+                    <p class="pl-6 mb-2 italic text-gray-500">
                       01/2015 - 03/2018
                     </p>
                     <div class="pl-6">
-                      <h3 class="font-bold mb-2">Key Projects Includes :</h3>
+                      <h3 class="mb-2 font-bold">Key Projects Includes :</h3>
                       <ul class="pl-6">
-                        <li class="list-disc mb-4">
+                        <li class="mb-4 list-disc">
                           Reusable Module : Adjust images with canvas
                           <a
                             href="https://kang-hu.github.io/playImage/"
@@ -340,7 +343,7 @@ const closeImgView = () => {
                             marketing packaging for projects.</span
                           >
                         </li>
-                        <li class="list-disc mb-4">
+                        <li class="mb-4 list-disc">
                           Marketing Campaign : Asus Zenfone<a
                             href="https://www.asus.com/tw/event/photopk/"
                             target="_blank"
@@ -369,7 +372,7 @@ const closeImgView = () => {
                         ><Coffee /></el-icon
                       >Engineer, Planner • POINT Design
                     </p>
-                    <p class="italic text-gray-500 mb-2 pl-6">
+                    <p class="pl-6 mb-2 italic text-gray-500">
                       08/2013 - 12/2014
                     </p>
                     <p class="pl-6">

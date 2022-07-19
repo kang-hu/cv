@@ -100,10 +100,10 @@ const closeImgView = () => {
               <!-- <p>
                 My passion is to use code to create beautiful, easy-to-use interfaces. I have over 8+ years of experience working as a front-end developer in a digital advertising agency and the e-commerce industry. I've collaborated with diverse clients and stakeholders to solve problems, continuously seek better ways, and keep improving my skills. In my spare time, I love photography and travel, which inspires me to work on creating beautiful things and discover the world from a different perspective.
               </p> -->
-              <p>喜歡探索世界的前端工程師，先後於數位行銷及C2C電商產業累積八年以上相關經驗，
-                期間完成專案外也擁有維運升級工具及管理和指導方面的經歷。
-                平常興趣是旅行和攝影，讓我重視觀察思考及體驗。
-                關於對開發的想法舉美好的青花瓷為例，白瓷搭配進口的染料搭配多元文化融合的圖案，以上使我總是期待參與製作好看易用的產品。
+              <p>喜歡探索世界的前端工程師，先後於數位行銷及C2C電商累積八年以上相關經驗，
+                負責專案或維運前端開發部分也擁有優化工具流程及組內管理指導方面的經歷。
+                平常興趣是旅行和攝影，讓我重視體驗和觀察思考解決之道。
+                關於對開發的想法舉美好的青花瓷為例，由白瓷和進口染料染上多元文化融合圖案組成，以上使我總是期待參與多元思維激盪下，實踐好看易用的產品。
               </p>
             </section>
             <el-divider />
@@ -112,7 +112,7 @@ const closeImgView = () => {
                 <section class="">
                   <h3 class="mb-2 text-xl font-bold">技能</h3>
                   <p class="mb-2 text-sm italic text-gray-500">// Front-End</p>
-                  <ul class="mb-2 text-sm font-bold leading-relaxed">
+                  <ul class="mb-4 text-sm leading-relaxed">
                     <li>HTML/Canvas</li>
                     <li>CSS/sass/Less</li>
                     <li>Javascript/JQuery</li>
@@ -121,17 +121,16 @@ const closeImgView = () => {
                     <li>Vite/Gulp/Webpack</li>
                   </ul>
                   <p class="mb-2 text-sm italic text-gray-500">// Back-End</p>
-                  <ul class="mb-2 text-sm font-bold leading-relaxed">
+                  <ul class="mb-4 text-sm leading-relaxed">
                     <li>Wordpress</li>
-                    <li>MVC/Asp.net/PHP</li>
-                    <li>Jenkins/Azure</li>
+                    <li>Asp.net/PHP</li>
                   </ul>
                   <p class="mb-2 text-sm italic text-gray-500">// Others</p>
-                  <ul class="mb-2 text-sm font-bold leading-relaxed">
+                  <ul class="mb-2 text-sm leading-relaxed">
                     <li>Ga/Gtag/GTM</li>
-                    <li>lighthouse</li>
-                    <li>Docker</li>
                     <li>Git/Svn</li>
+                    <li>lighthouse</li>
+                    <li>Docker/Jenkins</li>
                   </ul>
                 </section>
                 <el-divider />
@@ -165,13 +164,166 @@ const closeImgView = () => {
                 </section>
               </el-col>
               <el-col :span="19" :sm="17" :xs="24" class="">
-                <section class="mb-4">
-                  <div class="">
-                    <h3 class="mb-2 text-xl font-bold">FREELANCED WORKING EXPERIENCE</h3>
-                    <p class="pl-6 mb-2 italic text-gray-500">
-                      2015 - Present
+                <section ref="" class="mb-4">
+                  <h3 class="mb-2 text-xl font-bold">工作經歷</h3>
+                  <div class="mb-4">
+                    <p class="font-bold">
+                      <el-icon color="#000000" :size="14" class="mr-2"
+                        ><Coffee /></el-icon
+                      >主任 , 資深前端工程師
                     </p>
-                    <p class="pl-6 mb-2">Follow customers guideline make a template and wordpress installation...</p>
+                    <p class="pl-6 font-bold">Ruten PChome eBay Co.,Ltd</p>
+                    <p class="pl-6 mb-2 italic text-gray-500">
+                      08/2018 - 05/2022
+                    </p>
+                    <div class="pl-6">
+                      <p class="mb-2">負責廣告技術部前端管理，主要職責有維護和功能開發，專案執行管理，團隊成員開發建議和檢核。和專案管理者、UI/UX設計師、後端工程師合作等多角色，對產品開發或內部流程，透過內部數據工具和GA檢討進行優化。</p>
+                      <!-- <div>
+                        <h3 class="mb-2 font-bold">Achievements</h3>
+                        <ul class="pl-6 mb-2">
+                          <li class="list-disc">User focus pages seo reaching lighthouse 85+</li>
+                          <li class="list-disc">Improve compile environment using vite, docker... decrease compile time 80%+</li>
+                        </ul>
+                      </div> -->
+                      <h3 class="mb-2 font-bold">期間主要經歷 :</h3>
+                      <ul class="pl-6">
+                        <li class="mb-4 list-disc">
+                          <p>
+                            露天相關頁面
+                            <a
+                              href="javascript:void"
+                              class="ml-1 align-middle"
+                              @click.prevemt="open()"
+                              ><el-icon color="#000000" :size="14"
+                                ><Link /></el-icon
+                            ></a>
+                          </p>
+                          <p class="mt-2">
+                            負責站上廣告投放方面產品亦參與站上重要頁面如商品、賣場等頁面進行更新和維護。
+                          </p>
+                        </li>
+                        <li class="mb-4 list-disc">
+                          <p>
+                            開發工具相關
+                          </p>
+                          <ul class="mt-2">
+                            <li>
+                              使用 Vue3 Vite ElementUI Tailwind 開發工具包。<a
+                                href="https://github.com/kang-hu/vite-tailwind-elementplus-startkit"
+                                class="ml-1 align-middle"
+                                target="_blank"
+                                ><el-icon color="#000000" :size="14"
+                                  ><Link /></el-icon
+                              ></a>
+                            </li>
+                            <li>
+                              使用 Vue2 Gulp Wepack 開發工具包。<a
+                                href="https://github.com/kang-hu/gulp-webpack-vue2-startkit"
+                                class="ml-1 align-middle"
+                                target="_blank"
+                                ><el-icon color="#000000" :size="14"
+                                  ><Link /></el-icon
+                              ></a>
+                            </li>
+                            <li>使用 verdaccio 作爲內部模組存取倉庫。</li>
+                            <li>使用 mocks-server 模擬api回應。</li>
+                            <li>將相關開發工具docker化成image配合ci/cd流程。</li>
+                          </ul>
+                        </li>
+                        <li class="list-disc">
+                          <p class="mb-2">
+                            行銷類專案 : 運用 Canvas, Gsap 製作活潑動畫加強互動。
+                          </p>
+                          <ul class="">
+                            <li>
+                              <span class="mr-2">
+                                案例：The faster<a
+                                href="https://kang-hu.github.io/thefaster/"
+                                target="_blank"
+                                class="ml-1 align-middle"
+                                ><el-icon color="#000000" :size="14"
+                                  ><Link /></el-icon></a>
+                              </span>
+                            </li>
+                            <li>
+                              案例：Monopoly<a
+                                href="https://kang-hu.github.io/monopoly/"
+                                target="_blank"
+                                class="ml-1 align-middle"
+                                ><el-icon color="#000000" :size="14"
+                                  ><Link /></el-icon
+                              ></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-bold">
+                      <el-icon color="#000000" :size="14" class="mr-2"
+                        ><Coffee /></el-icon
+                      >資深前端工程師 前端工程師
+                    </p>
+                    <p class="pl-6 font-bold">
+                      SPRING TREES TECHNOLOGY CO., LTD.
+                    </p>
+                    <p class="pl-6 mb-2 italic text-gray-500">
+                      01/2015 - 03/2018
+                    </p>
+                    <p class="pl-6 mb-4">與團隊針對客戶行銷目的提出解決方案，為方案進行研究及實踐。
+                    </p>
+                    <div class="pl-6">
+                      <h3 class="mb-2 font-bold">期間主要經歷 :</h3>
+                      <ul class="pl-6">
+                        <li class="list-disc">
+                          製作重用性模組：canvas裁切調整圖片
+                          <a
+                            href="https://kang-hu.github.io/playImage/"
+                            target="_blank"
+                            class="ml-1 align-middle"
+                            ><el-icon color="#000000" :size="14"
+                              ><Link /></el-icon
+                          ></a>
+                        </li>
+                        <li class="list-disc">
+                          使用與維護 gulp webpack 為主體的編譯任務開發工具包
+                        </li>
+                        <li class="list-disc">
+                          行銷活動類案例：Asus Zenfone<a
+                            href="https://www.asus.com/tw/event/photopk/"
+                            target="_blank"
+                            class="ml-1 align-middle"
+                            ><el-icon color="#000000" :size="14"
+                              ><Link /></el-icon
+                          ></a>
+                          Carrefour and Brics<a
+                            href="https://showcase.friendo.com.tw/carrefourBrics"
+                            target="_blank"
+                            class="ml-1 align-middle"
+                            ><el-icon color="#000000" :size="14"
+                              ><Link /></el-icon
+                          ></a>          
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-bold">
+                      <el-icon color="#000000" :size="14" class="mr-2"
+                        ><Coffee /></el-icon
+                      >網頁工程師 企劃 • POINT Design
+                    </p>
+                    <p class="pl-6 mb-2 italic text-gray-500">
+                      08/2013 - 12/2014
+                    </p>
+                    <p class="pl-6 mb-4">規劃頁面內容規劃並將設計稿實踐成靜態網頁。
+                    </p>
+                  </div>
+                </section>
+                <section>
+                  <div class="">
+                    <h3 class="mb-2 text-xl font-bold">自由工作經歷</h3>
+                    <p class="pl-6 mb-2">行銷類網頁專案和wordpress形象網站架設</p>
                     <div class="pl-6">
                       <ul class="pl-6">
                         <li class="list-disc">
@@ -203,182 +355,6 @@ const closeImgView = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
-                </section>
-                <section>
-                  <h3 class="mb-2 text-xl font-bold">WORKING EXPERIENCE</h3>
-                  <div class="mb-4">
-                    <p class="font-bold">
-                      <el-icon color="#000000" :size="14" class="mr-2"
-                        ><Coffee /></el-icon
-                      >Consultant , SeniorFront-End Developer
-                    </p>
-                    <p class="pl-6 font-bold">Ruten PChome eBay Co.,Ltd</p>
-                    <p class="pl-6 mb-2 italic text-gray-500">
-                      08/2018 - Present
-                    </p>
-                    <div class="pl-6">
-                      <ul class="pl-6 mb-2">
-                          <li class="list-disc">Responsible for the front-end of the ad & tech team, which includes tech survey, code review.</li>
-                          <li class="list-disc">Collaborated with UI/UX designer, backend developer, and product owner to improve the shopping experience. </li>
-                          <li class="list-disc">Conducted A/B testing and kept track of metrics(impress, event) via Google Analytics, elk.</li>
-                        </ul>
-                      <div>
-                        <h3 class="mb-2 font-bold">Achievements</h3>
-                        <ul class="pl-6 mb-2">
-                          <li class="list-disc">User focus pages seo reaching lighthouse 85+</li>
-                          <li class="list-disc">Improve compile environment using vite, docker... decrease compile time 80%+</li>
-                        </ul>
-                      </div>
-                      <h3 class="mb-2 font-bold">Key Projects Includes</h3>
-                      <ul class="pl-6">
-                        <li class="mb-4 list-disc">
-                          <p>
-                            Ruten's pages
-                            <span class="italic">(vue2, vue3, php)</span
-                            ><a
-                              href="javascript:void"
-                              class="ml-1 align-middle"
-                              @click.prevemt="open()"
-                              ><el-icon color="#000000" :size="14"
-                                ><Link /></el-icon
-                            ></a>
-                          </p>
-                          <p class="italic text-gray-500">
-                            // Mainly responsible for the AD system also
-                            participated in site revisions (product, seller
-                            page...).Concerned about realizing the design draft with the componentized concept, integrate the service API with the backend.
-                          </p>
-                        </li>
-                        <li class="mb-4 list-disc">
-                          <p>
-                            Front-End Infra
-                            <span class="italic">(vite, gulp, webpack)</span>
-                          </p>
-                          <ul class="mt-2">
-                            <li>
-                              Vue3 Vite use ElementUI Tailwind startkit<a
-                                href="https://github.com/kang-hu/vite-tailwind-elementplus-startkit"
-                                class="ml-1 align-middle"
-                                target="_blank"
-                                ><el-icon color="#000000" :size="14"
-                                  ><Link /></el-icon
-                              ></a>
-                            </li>
-                            <li>
-                              Vue2 Gulp Wepack frontend template startkit<a
-                                href="https://github.com/kang-hu/gulp-webpack-vue2-startkit"
-                                class="ml-1 align-middle"
-                                target="_blank"
-                                ><el-icon color="#000000" :size="14"
-                                  ><Link /></el-icon
-                              ></a>
-                            </li>
-                          </ul>
-                          <p class="mt-1 italic text-gray-500">
-                            // Have a tool-building mindset, continuously
-                            improve the develope environment. For example
-                            dockerize bundle tool in CI/CD and created
-                            additional services to help with development and
-                            testing.
-                          </p>
-                        </li>
-                        <li class="list-disc">
-                          <p>
-                            Marketing Campaign :
-                            <span class="italic">(Canvas, Gsap)</span>
-                          </p>
-                          <ul class="">
-                            <li>
-                              <span class="mr-2">
-                                The faster<a
-                                href="https://kang-hu.github.io/thefaster/"
-                                target="_blank"
-                                class="ml-1 align-middle"
-                                ><el-icon color="#000000" :size="14"
-                                  ><Link /></el-icon></a>
-                              </span>
-                              Monopoly<a
-                                href="https://kang-hu.github.io/monopoly/"
-                                target="_blank"
-                                class="ml-1 align-middle"
-                                ><el-icon color="#000000" :size="14"
-                                  ><Link /></el-icon
-                              ></a>
-                            </li>
-                          </ul>
-                          <p class="mt-1 italic text-gray-500">
-                            // Responsible for website development and then publishing via CMS.
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <p class="font-bold">
-                      <el-icon color="#000000" :size="14" class="mr-2"
-                        ><Coffee /></el-icon
-                      >Senior, Junior Front-End Developer
-                    </p>
-                    <p class="pl-6 font-bold">
-                      SPRING TREES TECHNOLOGY CO., LTD.
-                    </p>
-                    <p class="pl-6 mb-2 italic text-gray-500">
-                      01/2015 - 03/2018
-                    </p>
-                    <div class="pl-6">
-                      <h3 class="mb-2 font-bold">Key Projects Includes :</h3>
-                      <ul class="pl-6">
-                        <li class="mb-4 list-disc">
-                          Reusable Module : Adjust images with canvas
-                          <a
-                            href="https://kang-hu.github.io/playImage/"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                          <br /><span class="italic text-gray-500"
-                            >// Develop reusable web features to provide
-                            marketing packaging for projects.</span
-                          >
-                        </li>
-                        <li class="mb-4 list-disc">
-                          Marketing Campaign : Asus Zenfone<a
-                            href="https://www.asus.com/tw/event/photopk/"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                          Carrefour and Brics<a
-                            href="https://showcase.friendo.com.tw/carrefourBrics"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                          <br />
-                          <span class="italic text-gray-500"
-                            >// Focus on improving start kit and code management and implementing design drafts to templates.</span
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <p class="font-bold">
-                      <el-icon color="#000000" :size="14" class="mr-2"
-                        ><Coffee /></el-icon
-                      >Engineer, Planner • POINT Design
-                    </p>
-                    <p class="pl-6 mb-2 italic text-gray-500">
-                      08/2013 - 12/2014
-                    </p>
-                    <p class="pl-6">
-                      Plan web content for designer then turn design to static
-                      site.
-                    </p>
                   </div>
                 </section>
               </el-col>

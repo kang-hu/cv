@@ -30,6 +30,7 @@ import rutenAd from "Assets/ruten_ad.png";
 import rutenAdBoard from "Assets/ruten_ad_board.png";
 import rutenLogistic from "Assets/ruten_logistic.png";
 import rutenSeller from "Assets/ruten_seller.png";
+import avatar from "Assets/chungkanghu-s.jpg";
 
 let locale = zhTw;
 let value1 = ref("");
@@ -50,9 +51,6 @@ const closeImgView = () => {
     <div class="common-layout">
       <el-container>
         <el-main>
-          <h1 class="text-3xl font-bold mb-4">
-            Hello! Hej!
-          </h1>
           <section>
             <el-row class="row-bg" justify="space-between" align="">
               <el-col :span="16">
@@ -61,7 +59,7 @@ const closeImgView = () => {
                     <div class="avatar">
                       <el-avatar
                         :size="100"
-                        src="https://kang-hu.github.io/images/avatar1.jpg"
+                        :src="avatar"
                       />
                     </div>
                   </el-col>
@@ -109,7 +107,7 @@ const closeImgView = () => {
                 <section class="">
                   <h3 class="text-xl font-bold mb-2">SKILLS & TOOLS</h3>
                   <p class="text-sm italic text-gray-500 mb-2">// Front-End</p>
-                  <ul class="text-sm font-bold mb-2 leading-relaxed">
+                  <ul class="text-sm mb-2 leading-relaxed">
                     <li>HTML/Canvas</li>
                     <li>CSS/sass/Less</li>
                     <li>Javascript/JQuery</li>
@@ -118,17 +116,16 @@ const closeImgView = () => {
                     <li>Vite/Gulp/Webpack</li>
                   </ul>
                   <p class="text-sm italic text-gray-500 mb-2">// Back-End</p>
-                  <ul class="text-sm font-bold mb-2 leading-relaxed">
+                  <ul class="text-sm mb-2 leading-relaxed">
                     <li>Wordpress</li>
-                    <li>MVC/Asp.net/PHP</li>
-                    <li>Jenkins/Azure</li>
+                    <li>Asp.net/PHP</li>
                   </ul>
                   <p class="text-sm italic text-gray-500 mb-2">// Others</p>
-                  <ul class="text-sm font-bold mb-2 leading-relaxed">
+                  <ul class="text-sm mb-2 leading-relaxed">
                     <li>Ga/Gtag/GTM</li>
-                    <li>lighthouse</li>
-                    <li>Docker</li>
                     <li>Git/Svn</li>
+                    <li>lighthouse</li>
+                    <li>Docker/Jenkins</li>
                   </ul>
                 </section>
                 <el-divider />
@@ -163,52 +160,12 @@ const closeImgView = () => {
               </el-col>
               <el-col :span="19" :sm="17" :xs="24" class="">
                 <section class="mb-4">
-                  <div class="">
-                    <h3 class="text-xl font-bold mb-2">FREELANCED WORKING EXPERIENCE</h3>
-                    <p class="italic text-gray-500 mb-2 pl-6">
-                      2015 - Present
-                    </p>
-                    <p class="mb-2 pl-6">Follow customers guideline make a template and wordpress installation...</p>
-                    <div class="pl-6">
-                      <ul class="pl-6">
-                        <li class="list-disc">
-                          Wordpress site : Rankodo<a
-                            href="http://rankodo.com/"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                        </li>
-                        <li class="list-disc">
-                          Wordpress site : Spacetimefilm<a
-                            href="https://spacetimefilm.com/"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                        </li>
-                        <li class="list-disc">
-                          Marketing Campaign : KKday 2019 summer<a
-                            href="https://kang-hu.github.io/kksummer/index.html"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
-                <section>
                   <h3 class="text-xl font-bold mb-2">WORKING EXPERIENCE</h3>
                   <div class="mb-4">
                     <p class="font-bold">
                       <el-icon color="#000000" :size="14" class="mr-2"
                         ><Coffee /></el-icon
-                      >Consultant , SeniorFront-End Developer
+                      >Supervisor , SeniorFront-End Developer
                     </p>
                     <p class="font-bold pl-6">Ruten PChome eBay Co.,Ltd</p>
                     <p class="italic text-gray-500 mb-2 pl-6">
@@ -223,7 +180,7 @@ const closeImgView = () => {
                       <div>
                         <h3 class="font-bold mb-2">Achievements</h3>
                         <ul class="pl-6 mb-2">
-                          <li class="list-disc">User focus pages seo reaching lighthouse 85+</li>
+                          <li class="list-disc">User focus pages seo reaching lighthouse 80+</li>
                           <li class="list-disc">Improve compile environment using vite, docker... decrease compile time 80%+</li>
                         </ul>
                       </div>
@@ -271,6 +228,8 @@ const closeImgView = () => {
                                   ><Link /></el-icon
                               ></a>
                             </li>
+                            <li>Use verdaccio as internal module package repository</li>
+                            <li>Mock the api with mocks-server</li>
                           </ul>
                           <p class="italic text-gray-500 mt-1">
                             // Have a tool-building mindset, continuously
@@ -376,6 +335,46 @@ const closeImgView = () => {
                       Plan web content for designer then turn design to static
                       site.
                     </p>
+                  </div>
+                </section>
+                                <section>
+                  <div class="">
+                    <h3 class="text-xl font-bold mb-2">FREELANCED WORKING EXPERIENCE</h3>
+                    <p class="italic text-gray-500 mb-2 pl-6">
+                      2015 - Present
+                    </p>
+                    <p class="mb-2 pl-6">Follow customers guideline make a template and wordpress installation...</p>
+                    <div class="pl-6">
+                      <ul class="pl-6">
+                        <li class="list-disc">
+                          Wordpress site : Rankodo<a
+                            href="http://rankodo.com/"
+                            target="_blank"
+                            class="ml-1 align-middle"
+                            ><el-icon color="#000000" :size="14"
+                              ><Link /></el-icon
+                          ></a>
+                        </li>
+                        <li class="list-disc">
+                          Wordpress site : Spacetimefilm<a
+                            href="https://spacetimefilm.com/"
+                            target="_blank"
+                            class="ml-1 align-middle"
+                            ><el-icon color="#000000" :size="14"
+                              ><Link /></el-icon
+                          ></a>
+                        </li>
+                        <li class="list-disc">
+                          Marketing Campaign : KKday 2019 summer<a
+                            href="https://kang-hu.github.io/kksummer/index.html"
+                            target="_blank"
+                            class="ml-1 align-middle"
+                            ><el-icon color="#000000" :size="14"
+                              ><Link /></el-icon
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </section>
               </el-col>

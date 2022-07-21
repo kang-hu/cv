@@ -100,10 +100,10 @@ const closeImgView = () => {
               <!-- <p>
                 My passion is to use code to create beautiful, easy-to-use interfaces. I have over 8+ years of experience working as a front-end developer in a digital advertising agency and the e-commerce industry. I've collaborated with diverse clients and stakeholders to solve problems, continuously seek better ways, and keep improving my skills. In my spare time, I love photography and travel, which inspires me to work on creating beautiful things and discover the world from a different perspective.
               </p> -->
-              <p>喜歡探索世界的前端工程師，先後於數位行銷及C2C電商累積八年以上相關經驗，
-                負責專案或維運前端開發部分也擁有優化工具流程及組內管理指導方面的經歷。
-                平常興趣是旅行和攝影，讓我重視體驗和觀察思考解決之道。
-                關於對開發的想法舉美好的青花瓷為例，由白瓷和進口染料染上多元文化融合圖案組成，以上使我總是期待參與多元思維激盪下，實踐好看易用的產品。
+              <p>對於探索世界抱持開放心態的前端工程師，
+                先後於數位行銷及C2C電商累積超過8年經驗，
+                負責專案及維運，前端開發部分擁有優化工具流程、團隊專案期程管理及主持程式碼覆核交流的經歷。
+                旅行和攝影的興趣，成為我在體驗設計及觀察思考上的靈感來源。對於開發的願景，就如美好的青花瓷，是由白瓷和進口染料染上多元文化融合圖案組成，我相信在多元思維激盪下，能夠交織出好看且易用的產品
               </p>
             </section>
             <el-divider />
@@ -172,7 +172,7 @@ const closeImgView = () => {
                         ><Coffee /></el-icon
                       >主任 , 資深前端工程師
                     </p>
-                    <p class="pl-6 font-bold">Ruten PChome eBay Co.,Ltd</p>
+                    <p class="pl-6 font-bold">露天市集國際資訊股份有限公司</p>
                     <p class="pl-6 mb-2 italic text-gray-500">
                       08/2018 - 05/2022
                     </p>
@@ -265,7 +265,7 @@ const closeImgView = () => {
                       >資深前端工程師 前端工程師
                     </p>
                     <p class="pl-6 font-bold">
-                      SPRING TREES TECHNOLOGY CO., LTD.
+                      春樹科技股份有限公司
                     </p>
                     <p class="pl-6 mb-2 italic text-gray-500">
                       01/2015 - 03/2018
@@ -311,7 +311,7 @@ const closeImgView = () => {
                     <p class="font-bold">
                       <el-icon color="#000000" :size="14" class="mr-2"
                         ><Coffee /></el-icon
-                      >網頁工程師 企劃 • POINT Design
+                      >網頁工程師 企劃 • 頗意多視覺設計
                     </p>
                     <p class="pl-6 mb-2 italic text-gray-500">
                       08/2013 - 12/2014

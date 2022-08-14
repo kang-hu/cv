@@ -55,25 +55,14 @@ const closeImgView = () => {
             <el-row class="row-bg" justify="space-between" align="">
               <el-col :span="16">
                 <el-row align="middle">
-                  <el-col :span="6">
-                    <div class="avatar">
-                      <el-avatar
-                        :size="100"
-                        :src="avatar"
-                      />
-                    </div>
-                  </el-col>
-                  <el-col :span="18">
-                    <h1 class="text-3xl font-bold">CHUNG-KANG HU</h1>
-                    <h1 class="text-3xl font-bold mb-2">胡 仲 康</h1>
-                    <p class="text-lg italic text-gray-500">
-                      Front-End-Developer
-                    </p>
+                  <el-col class="text-left">
+                    <h1 class="text-3xl font-bold">胡 仲 康</h1>
+                    <h1 class="text-2xl font-bold">CHUNG-KANG HU</h1>
                   </el-col>
                 </el-row>
               </el-col>
               <el-col :span="8" class="">
-                <div class="text-sm">
+                <div class="text-sm text-right">
                   <p>
                     <el-icon color="#000000" :size="14" class="mr-2"
                       ><Message /></el-icon
@@ -95,287 +84,145 @@ const closeImgView = () => {
           </section>
           <el-divider />
           <section>
-            <section>
-              <h3 class="text-xl font-bold mb-2">SUMMARY</h3>
-              <p>
-                My passion is to use code to create beautiful, easy-to-use interfaces. I have over 8+ years of experience working as a front-end developer in a digital advertising agency and the e-commerce industry. I've collaborated with diverse clients and stakeholders to solve problems, continuously seek better ways, and keep improving my skills. In my spare time, I love photography and travel, which inspires me to work on creating beautiful things and discover the world from a different perspective.
-              </p>
-            </section>
-            <el-divider />
             <el-row>
-              <el-col id="side" :span="5" :sm="7" :xs="24" class="pr-2">
+              <el-col :span="24" class="">
                 <section class="">
-                  <h3 class="text-xl font-bold mb-2">SKILLS & TOOLS</h3>
-                  <p class="text-sm italic text-gray-500 mb-2">// Front-End</p>
-                  <ul class="text-sm mb-2 leading-relaxed">
-                    <li>HTML/Canvas</li>
-                    <li>CSS/sass/Less</li>
-                    <li>Javascript/JQuery</li>
-                    <li>GSAP</li>
-                    <li>Vue3/Vue2/Vuex</li>
-                    <li>Vite/Gulp/Webpack</li>
-                  </ul>
-                  <p class="text-sm italic text-gray-500 mb-2">// Back-End</p>
-                  <ul class="text-sm mb-2 leading-relaxed">
-                    <li>Wordpress</li>
-                    <li>Asp.net/PHP</li>
-                  </ul>
-                  <p class="text-sm italic text-gray-500 mb-2">// Others</p>
-                  <ul class="text-sm mb-2 leading-relaxed">
-                    <li>Ga/Gtag/GTM</li>
-                    <li>Git/Svn</li>
-                    <li>lighthouse</li>
-                    <li>Docker/Jenkins</li>
-                  </ul>
-                </section>
-                <el-divider />
-                <section>
-                  <h3 class="text-xl font-bold mb-2">LANGUAGE</h3>
-                  <p class="text-sm">
-                    Chinese<span class="text-gray-500 ml-2 italic"
-                      >// Native</span
-                    >
-                  </p>
-                  <p class="text-sm">
-                    English<span class="text-gray-500 ml-2 italic"
-                      >// Fluent</span
-                    >
-                  </p>
-                </section>
-                <el-divider />
-                <section>
-                  <h3 class="text-xl font-bold mb-2">EDUCATION</h3>
-                  <p class="">Information Management</p>
-                  <p class="">Yuan Ze University</p>
-                  <p class="text-sm mb-2">
-                    <span class="italic text-gray-500"
-                      >(Bachelor Degree<br />09/08 - 06/12)</span
-                    >
-                  </p>
-                  <p class="text-sm">
-                    Computer science, Programming,<br />Data Structure,<br />SQL
-                    Database,<br />ystem Analysis,<br />Basic Business Courses
-                  </p>
-                </section>
-              </el-col>
-              <el-col :span="19" :sm="17" :xs="24" class="">
-                <section class="mb-4">
-                  <h3 class="text-xl font-bold mb-2">WORKING EXPERIENCE</h3>
-                  <div class="mb-4">
-                    <p class="font-bold">
-                      <el-icon color="#000000" :size="14" class="mr-2"
+                  <h3 class="text-xl font-bold">工作經歷</h3>
+                  <article class="mb-1">
+                    <p class="text-base font-bold">
+                      <el-icon color="#000000" :size="12" class="mr-2"
                         ><Coffee /></el-icon
-                      >Supervisor , SeniorFront-End Developer
+                      >露天市集國際資訊股份有限公司,<span class="ml-2 italic font-normal text-gray-500">08/2018 - 05/2022</span>
                     </p>
-                    <p class="font-bold pl-6">Ruten PChome eBay Co.,Ltd</p>
-                    <p class="italic text-gray-500 mb-2 pl-6">
-                      08/2018 - Present
+                    <p class="pl-5 font-bold">
+                      廣告技術部, 主任<span class="ml-2 italic font-normal text-gray-500">2年+</span>
+                      <a
+                          href="javascript:void"
+                          class="ml-1 align-middle"
+                          @click.prevent="open()"
+                          ><el-icon color="#000000" :size="14"
+                            ><Link /></el-icon
+                        ></a>
                     </p>
-                    <div class="pl-6">
-                      <ul class="pl-6 mb-2">
-                          <li class="list-disc">Responsible for the front-end of the ad & tech team, which includes tech survey, code review.</li>
-                          <li class="list-disc">Collaborated with UI/UX designer, backend developer, and product owner to improve the shopping experience. </li>
-                          <li class="list-disc">Conducted A/B testing and kept track of metrics(impress, event) via Google Analytics, elk.</li>
-                        </ul>
-                      <div>
-                        <h3 class="font-bold mb-2">Achievements</h3>
-                        <ul class="pl-6 mb-2">
-                          <li class="list-disc">User focus pages seo reaching lighthouse 80+</li>
-                          <li class="list-disc">Improve compile environment using vite, docker... decrease compile time 80%+</li>
-                        </ul>
-                      </div>
-                      <h3 class="font-bold mb-2">Key Projects Includes</h3>
-                      <ul class="pl-6">
-                        <li class="list-disc mb-4">
-                          <p>
-                            Ruten's pages
-                            <span class="italic">(vue2, vue3, php)</span
-                            ><a
-                              href="javascript:void"
-                              class="ml-1 align-middle"
-                              @click.prevemt="open()"
-                              ><el-icon color="#000000" :size="14"
-                                ><Link /></el-icon
-                            ></a>
-                          </p>
-                          <p class="italic text-gray-500">
-                            // Mainly responsible for the AD system also
-                            participated in site revisions (product, seller
-                            page...).Concerned about realizing the design draft with the componentized concept, integrate the service API with the backend.
-                          </p>
-                        </li>
-                        <li class="list-disc mb-4">
-                          <p>
-                            Front-End Infra
-                            <span class="italic">(vite, gulp, webpack)</span>
-                          </p>
-                          <ul class="mt-2">
-                            <li>
-                              Vue3 Vite use ElementUI Tailwind startkit<a
-                                href="https://github.com/kang-hu/vite-tailwind-elementplus-startkit"
-                                class="ml-1 align-middle"
-                                target="_blank"
-                                ><el-icon color="#000000" :size="14"
-                                  ><Link /></el-icon
-                              ></a>
-                            </li>
-                            <li>
-                              Vue2 Gulp Wepack frontend template startkit<a
-                                href="https://github.com/kang-hu/gulp-webpack-vue2-startkit"
-                                class="ml-1 align-middle"
-                                target="_blank"
-                                ><el-icon color="#000000" :size="14"
-                                  ><Link /></el-icon
-                              ></a>
-                            </li>
-                            <li>Use verdaccio as internal module package repository</li>
-                            <li>Mock the api with mocks-server</li>
-                          </ul>
-                          <p class="italic text-gray-500 mt-1">
-                            // Have a tool-building mindset, continuously
-                            improve the develope environment. For example
-                            dockerize bundle tool in CI/CD and created
-                            additional services to help with development and
-                            testing.
-                          </p>
-                        </li>
+                    <ul class="pl-5 ml-5 text">
+                      <li class="list-disc">規劃和實作獨立開發環境，實現前後分離與主站解耦，降低成員間開發環境差異性，不再發生主站專案合併衝突，時間減少80%+開發上線時間。</li>
+                      <ul class="ml-5">
                         <li class="list-disc">
-                          <p>
-                            Marketing Campaign :
-                            <span class="italic">(Canvas, Gsap)</span>
-                          </p>
-                          <ul class="">
-                            <li>
-                              <span class="mr-2">
-                                The faster<a
-                                href="https://kang-hu.github.io/thefaster/"
-                                target="_blank"
-                                class="ml-1 align-middle"
-                                ><el-icon color="#000000" :size="14"
-                                  ><Link /></el-icon></a>
-                              </span>
-                              Monopoly<a
+                          <p class="text-black">使用<span class="mx-1 font-bold">Docker</span>封裝<span class="mx-1 font-bold">Vite</span>配置<span class="mx-1 font-bold">Vue3</span>的開發及打包環境，減少90%+的編譯時間。</p>
+                        </li>
+                        <li class="list-disc">使用<span class="mx-1 font-bold">Tailwind、ElementUI</span>滿足露天樣式規則及廣告系統設計規則建立廣告team UI framework兼顧人力和開發速度。</li>
+                        <li class="list-disc">使用<span class="mx-1 font-bold">Verdaccio</span>作為內部npm代理，存取專案間共用內部packages。</li>
+                        <li class="list-disc">使用<span class="mx-1 font-bold">Node.js Mock-Server</span>模擬回應降低開發期api依賴，實驗Cypress驗證的可行性。</li>
+                        <li class="list-disc">開發模式套用於露天廣告，關聯、關鍵字、代理google廣告、露天上架PChome...等系統。</li>
+                      </ul>
+                      <li class="list-disc">優化站上功能及提升廣告效益。</li>
+                      <ul class="ml-5">
+                        <li class="list-disc">優化記錄使用者行為的流程，提升、GA、內部kibana追蹤和廣告計價的準確度。</li>
+                        <li class="list-disc">規劃聯播網廣告播放流程的全站 Mixin，和業務依頁面流量及收入成效進行調整版位。</li>
+                        <li class="list-disc">主導商品頁重購，與UX 、企劃以Scrum型式依數據HeatMap搭配A/B Testing執行，效能方面遵循Core Web Vitals及<span class="mx-1 font-bold">lighthouse</span>驗證，通過CLS 0秒FCP 1秒內，整體效能80+。</li>
+                        <li class="list-disc">開發行銷工具，站上RWD個人推薦關鍵字商品集合頁，並規劃<span class="mx-1 font-bold">jQuery Plugin</span>提供行銷部重複包裝行銷頁，帶來曝光、點擊、轉換，提升每月5萬+收益。</li>
+                      </ul>
+                      <li class="list-disc">負責評量兩位前端，<span class="mx-1 font-bold">Asana</span>任務分配，<span class="mx-1 font-bold">Miro、Figma</span>開發說明，協助<span class="mx-1 font-bold">Trello</span>回報議題釐清，發布前檢閱討論程式。</li>
+                    </ul>
+                    <div class="mx-5"><el-divider /></div>
+                    <p class="pl-5 font-bold">
+                      網頁工程部, 資深前端工程師<span class="ml-2 italic font-normal text-gray-500">1年+</span>
+                    </p>
+                    <ul class="pl-5 ml-5 text">
+                      <li class="list-disc">能獨立負責專案，與設計師、專案企劃透過zeplin、Axure協作。分享幫助案內工程師。</li>
+                      <ul class="ml-5">
+                        <li class="list-disc">開發賣家AWD物流設定系統，整合6家物流設定保持增減彈性，元件化共用表單元素和vuelidate驗證。</li>
+                        <li class="list-disc">開發行動版SPA賣場，<span class="font-bold">Vue Router</span>配置賣場功能，搜尋排序商品陳列，搭配session storage減少請求。</li>
+                        <li class="list-disc">協助處理站上需改善議題，改寫仍使用 jQuery、mustache的功能為Vue</li>
+                        <li class="list-disc">開發5+行銷活動，大富翁<a
                                 href="https://kang-hu.github.io/monopoly/"
                                 target="_blank"
-                                class="ml-1 align-middle"
                                 ><el-icon color="#000000" :size="14"
                                   ><Link /></el-icon
-                              ></a>
-                            </li>
-                          </ul>
-                          <p class="italic text-gray-500 mt-1">
-                            // Responsible for website development and then publishing via CMS.
-                          </p>
-                        </li>
+                              ></a>、眼明手快<a
+                                href="https://kang-hu.github.io/thefaster/"
+                                target="_blank"
+                                ><el-icon color="#000000" :size="14"
+                                  ><Link /></el-icon></a>、轉盤、刮刮樂...等，為雙十一節等收益高峰期作出貢獻。</li>
+                        <ul class="ml-5">
+                          <li class="list-disc">使用Gsap、Canvas開發互動動畫。使用Gulp、Webpack為獨立專案配置開發環境。</li>
+                        </ul>
                       </ul>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <p class="font-bold">
-                      <el-icon color="#000000" :size="14" class="mr-2"
+                    </ul>
+                    <div class="mx-5"><el-divider /></div>
+                  </article>
+                  <article class="mb-1">
+                    <p class="text-base font-bold">
+                      <el-icon color="#000000" :size="12" class="mr-2"
                         ><Coffee /></el-icon
-                      >Senior, Junior Front-End Developer
+                      >春樹科技股份有限公司, 資深 前端工程師<span class="ml-2 italic font-normal text-gray-500">01/2015 - 03/2018</span>
                     </p>
-                    <p class="font-bold pl-6">
-                      SPRING TREES TECHNOLOGY CO., LTD.
-                    </p>
-                    <p class="italic text-gray-500 mb-2 pl-6">
-                      01/2015 - 03/2018
-                    </p>
-                    <div class="pl-6">
-                      <h3 class="font-bold mb-2">Key Projects Includes :</h3>
-                      <ul class="pl-6">
-                        <li class="list-disc mb-4">
-                          Reusable Module : Adjust images with canvas
-                          <a
+                    <ul class="pl-5 ml-5 text">
+                        <li class="list-disc">開發超過20+<span class="mx-1 font-bold">RWD</span>行銷網頁專案，負責UI和動畫開發、互動流程開發與api串接<br>
+    主要開發技術有<span class="mx-1 font-bold">Pug、SCSS、GSAP、JQuery、Vue2、angular1、 ASP.Net</span></li>
+                        <ul class="ml-5">
+                          <li class="list-disc">構建重用模組，如Canvas具手勢調整的上傳圖片，解藕前後端流程及節省伺服器運算成本。<a
                             href="https://kang-hu.github.io/playImage/"
                             target="_blank"
-                            class="ml-1 align-middle"
                             ><el-icon color="#000000" :size="14"
                               ><Link /></el-icon
-                          ></a>
-                          <br /><span class="italic text-gray-500"
-                            >// Develop reusable web features to provide
-                            marketing packaging for projects.</span
-                          >
-                        </li>
-                        <li class="list-disc mb-4">
-                          Marketing Campaign : Asus Zenfone<a
+                          ></a></li>
+                          <li class="list-disc">優化縮短開發時程，維護配置<span class="mx-1 font-bold">gulp、babel、webpack</span>，整理Pug template，樣式遵循7-1pattern結構和BEM命名。</li>
+                          <li class="list-disc"><span class="mx-1 font-bold">SEO</span>，整理meta 、og 和檢查項目，為內容添加Schema Orgs結構化資料，提交至google和facebook</li>
+                          <li class="list-disc">使用facebook sdk完成請求資訊、分享、按讚 ，加入ga事件或安裝gtm協助公司觀察成效報告。</li>
+                          <li class="list-disc">主要服務生活電子及金融品牌，家樂福、Ｐ＆Ｇ、華碩、晶碩、中信、台新...<br>代表專案華碩美景大對決<a
                             href="https://www.asus.com/tw/event/photopk/"
                             target="_blank"
-                            class="ml-1 align-middle"
                             ><el-icon color="#000000" :size="14"
                               ><Link /></el-icon
-                          ></a>
-                          Carrefour and Brics<a
-                            href="https://showcase.friendo.com.tw/carrefourBrics"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                          <br />
-                          <span class="italic text-gray-500"
-                            >// Focus on improving start kit and code management and implementing design drafts to templates.</span
-                          >
-                        </li>
+                          ></a>、晶碩舒適警告、中信四航卡、家樂福Brics聯名活動、Ｐ＆Ｇ新年賀卡</li>
+                        </ul>
+                        <li class="list-disc">代理開發主管一季，管理3+位前端，2+位後端，維持部門執行。</li>
+                        <ul class="ml-5">
+                          <li class="list-disc">使用Trello安排專案開發、技術研究、程式整理，舉行站會同步進度，專案問題協助排除。</li>
+                          <li class="list-disc"><span class="mx-1 font-bold">Azure</span>協助管理發佈，清除已無必要但造成費用的資源。</li>
+                          <li class="list-disc">參與啟動會議評估可行性，確認Axure prototype，協調開發上線時程。</li>
+                        </ul>
                       </ul>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <p class="font-bold">
-                      <el-icon color="#000000" :size="14" class="mr-2"
+                      <div class="mx-5"><el-divider /></div>
+                  </article>
+                  <article class="mb-1">
+                    <p class="text-base font-bold">
+                      <el-icon color="#000000" :size="12" class="mr-2"
                         ><Coffee /></el-icon
-                      >Engineer, Planner • POINT Design
+                      >頗意多設計, 網頁工程師<span class="ml-2 italic font-normal text-gray-500">01/2015 - 03/2018</span>
                     </p>
-                    <p class="italic text-gray-500 mb-2 pl-6">
-                      08/2013 - 12/2014
+                    <ul class="pl-5 ml-5 text">
+                      <li class="list-disc">負責製作網站地圖及內容規劃，與設計師協作含素材協尋及使用<span class="mx-1 font-bold">photoshop</span>去背。</li>
+                      <li class="list-disc">將設計稿製作成靜態網頁交付，幫助公司除視覺設計外可執行形象網頁及ＥＤＭ等程式業務。</li>
+                    </ul>
+                    <div class="mx-5"><el-divider /></div>
+                  </article>
+                  <article class="mb-1">
+                    <p class="text-base font-bold">
+                      <el-icon color="#000000" :size="12" class="mr-2"
+                        ><Coffee /></el-icon
+                      >自由工作經驗
                     </p>
-                    <p class="pl-6">
-                      Plan web content for designer then turn design to static
-                      site.
-                    </p>
-                  </div>
-                </section>
-                                <section>
-                  <div class="">
-                    <h3 class="text-xl font-bold mb-2">FREELANCED WORKING EXPERIENCE</h3>
-                    <p class="italic text-gray-500 mb-2 pl-6">
-                      2015 - Present
-                    </p>
-                    <p class="mb-2 pl-6">Follow customers guideline make a template and wordpress installation...</p>
-                    <div class="pl-6">
-                      <ul class="pl-6">
-                        <li class="list-disc">
-                          Wordpress site : Rankodo<a
-                            href="http://rankodo.com/"
+                    <ul class="pl-5 ml-5 text">
+                      <li class="list-disc">提供<span class="mx-1 font-bold">Worpress</span>服務，為時空號影像<a
+                            href="https://spacetimefilm.com"
                             target="_blank"
-                            class="ml-1 align-middle"
                             ><el-icon color="#000000" :size="14"
                               ><Link /></el-icon
-                          ></a>
-                        </li>
-                        <li class="list-disc">
-                          Wordpress site : Spacetimefilm<a
-                            href="https://spacetimefilm.com/"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                        </li>
-                        <li class="list-disc">
-                          Marketing Campaign : KKday 2019 summer<a
-                            href="https://kang-hu.github.io/kksummer/index.html"
-                            target="_blank"
-                            class="ml-1 align-middle"
-                            ><el-icon color="#000000" :size="14"
-                              ><Link /></el-icon
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                          ></a>、嵐香堂架站安裝、網域設定、樣板調整。</li>
+                      <li class="list-disc">提供設計稿切版含互動特效或串接流程的服務，如kkday的夏日促銷活動網頁。</li>
+                    </ul>
+                    <div class="mx-5"><el-divider /></div>
+                  </article>
+                  <article>
+                    <h3 class="text-xl font-bold">學歷</h3>
+                    <p class="text-base font-bold">
+                      <el-icon color="#000000" :size="12" class="mr-2"
+                        ></el-icon
+                      >元智大學 資訊管理學系 學士 09/08 - 06/12
+                    </p>
+                  </article>
                 </section>
               </el-col>
             </el-row>
@@ -398,20 +245,21 @@ body {
 
 .el-main {
   margin: 0 auto;
+  padding: 10px 0 !important;
 }
 
 .el-container {
-  max-width: 760px;
+  max-width: 800px;
   margin: 0 auto;
-}
-
-.common-layout {
-  padding: 20px 0 0 0;
 }
 
 .avatar {
   display: inline-block;
   width: 100px;
   height: 100px;
+}
+
+.el-divider--horizontal {
+  margin: 4px 0 4px 0 !important;
 }
 </style>

@@ -205,13 +205,18 @@ const closeImgView = () => {
                       >自由工作經驗
                     </p>
                     <ul class="pl-5 ml-5 text">
-                      <li class="list-disc">提供<span class="mx-1 font-bold">Worpress</span>服務，為時空號影像<a
+                      <li class="list-disc">提供<span class="mx-1 font-bold">Worpress</span>服務，為<a
                             href="https://spacetimefilm.com"
                             target="_blank"
-                            ><el-icon color="#000000" :size="14"
+                            >時空號影像<el-icon color="#000000" :size="14"
                               ><Link /></el-icon
                           ></a>、嵐香堂架站安裝、網域設定、樣板調整。</li>
-                      <li class="list-disc">提供設計稿切版含互動特效或串接流程的服務，如kkday的夏日促銷活動網頁。</li>
+                      <li class="list-disc">提供設計稿切版含互動特效或串接流程的服務。<a
+                            href="https://kang-hu.github.io/kksummer/index.html"
+                            target="_blank"
+                            >kkday的夏日促銷活動網頁<el-icon color="#000000" :size="14"
+                              ><Link /></el-icon
+                          ></a></li>
                     </ul>
                     <div class="mx-5"><el-divider /></div>
                   </article>

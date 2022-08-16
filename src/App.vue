@@ -270,4 +270,15 @@ body {
 .list-circle {
   list-style-type: circle;
 }
+
+
+.common-layout {
+  padding: 0 20px;
+}
+
+@media print{
+  .common-layout {
+    padding: 0px;
+  }
+}
 </style>
